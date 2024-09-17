@@ -1,97 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta keywords content="Robert Hopkins, Robert, Programming, Personal Website, Linguist, Linguistics, Computational Linguistics, Computer Science">
-    <title>Hopkins on the Internet</title>
-    <link rel="stylesheet", href="index.css">
-</head>
-<body>
-    <h1>Rob's Website</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="..." />
+    <title>Robert Hopkins - Home</title>
+    <!-- Link to the stylesheet -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <script>
+      // JavaScript to load the sidebar
+      function loadSidebar() {
+        fetch("sidebar.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("sidebar").innerHTML = data;
+          });
+      }
 
-    <h3>Welcome to my part of the World Wide Web</h3>
-    <p>
-        My great-great-grandfather's name is Robert Melvin Hopkins, mine is veeery similar but that's a little long so I just go by Rob or Melv(in).
-        I'm studying computer science (major) and linguistics (major) at THE University of Maryland. I'm a sophomore.
-    </p>
+      // Call the function when the window loads
+      window.onload = loadSidebar;
+    </script>
+  </head>
+  <body>
+    <!-- Sidebar placeholder -->
+    <div id="sidebar"></div>
 
-    <h3>About Me</h3>
-    <p>
-        Outside of computer science and linguistic study, I'm drawn to music, American football (go Ravens!), constructed languages (conlangs), 
-        public transportation, cooking, skiing/snowboarding, and Super Smash Bros. Melee.
-    </p>
-    <p>
-        I am a proud Marylander, born & raised. Great flag.
-    </p>
-    <img src="images/md_flag.gif", alt="maryland flag waving">
-
-    <h3>School</h3>
-    <p>
-        As mentioned earlier, I'm a double major in computer science and linguistics. I'm lucky enough to attend Maryland where both programs are outstanding!
-        In computer science, my classes involve computer systems, programming languages, and algorithms. 
-        In linguistics, I focus on syntax, the structure of language. I consider myself an "s-side" linguist.
-        I also love historical linguistics! Nothing is quite as fascinating as studying how languages change and grow over time!
-
-        I TA for computer science classes, and I'm involved in both the Linguistics Club and the Smash Club. 
-        I am also currently a research assistant and co-author on a paper on how language models learn syntax! 
-    </p>
-
-    <h3>Work</h3>
-    <p>
-        Under construction!
-    </p>
-
-    <h3>Other projects</h3>
-    <p>
-        Here are some favorite other projects of mine, outside of school or work:
-        <ul id="project-table">
-            <li style="margin-bottom: 20px;">
-                <b>My conlangs (all always under construction forever):</b>
-                <table class="conlang-table", style="width: 100%; border-collapse: collapse; border: 1px solid black;">
-                    <tr>
-                        <th style="border-bottom: 1px solid black; width: 15%; text-align: center;">Title</th>
-                        <th style="border-bottom: 1px solid black; width: 85%; text-align: center;">Info</th>
-                    </tr>
-                    <tr>
-                        <td style="border-bottom: 1px solid black">"aʃjoqek conlang"</td>
-                        <td style="border-bottom: 1px solid black">
-                            Imagine if you had a functionally infinite number of mouths and experienced time compltetely differently.
-                            That's the idea behind this language! Each lexeme corresponds to what we think of as an adjective, and every part of 
-                            speech is built by saying those "ad-morphs" simultaneously! It's got a very steep learning curve for humans 
-                            (you need the afformentioned infinite mouths and the ability to dissect "words" into their underlying ad-morphs instantaneously) 
-                            so I don't recommend endeavoring to learn this one... 
-                        </td>
-                    </tr>
-                    <tr>
-
-                    </tr>
-                </table>
-            </li>
-            <li style="margin-bottom: 20px;">
-                <b>Melv's Conlang Tools:</b>
-                When I'm making my constructed languages, there are some processes involved in generating a lexicon, simulating organic sound change, etc. which are 
-                done often enough that I made a few tools to help automate the process! 
-                The code for these tools is located <a href="https://github.com/rmhopkins4/Conlang-Tools", target="_blank">here!</a>
-            </li>
-            <li style="margin-bottom: 20px;">
-                <b>This very website:</b>
-                I will try to keep this place updated with my personal goings-on, and I often make changes to the design or content here!
-                Source code is also available on my Github <a href="https://github.com/rmhopkins4/rmhopkins4.github.io", target="_blank">here.</a>
-            </li>
-        </ul>
-    </p>
-
-    <footer>
-        <div align="center" id="footer">
-            <p>
-                Email me at: <b><a href="mailto:rmhopkins4@gmail.com">rmhopkins4@gmail.com</a></b>
-            </p>
-            <p>
-                Github: <b><a href="https://github.com/rmhopkins4", target="_blank">here!</a></b>
-            </p>
-            <p>
-                <!-- Additional footer content goes here if needed -->
-            </p>
-        </div>
-    </footer>
-</body>
+    <div class="content">
+      <p>
+        Welcome to my homepage! I am a junior undergraduate student in
+        <a href="https://www.cs.umd.edu/" title="Go to UMD CS website"
+          >Computer Science</a
+        >
+        and
+        <a
+          href="https://linguistics.umd.edu/"
+          title="Go to UMD linguistics website"
+          >Linguistics</a
+        >
+        at the University of Maryland.
+      </p>
+    </div>
+  </body>
 </html>
