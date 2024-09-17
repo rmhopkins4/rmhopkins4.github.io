@@ -10,14 +10,16 @@ body {
   background-color: #333;
   padding-top: 20px;
   position: fixed;
-  color: white; /* Ensure the text color is white */
+  color: white;
 }
 
 .sidebar-header {
-  font-size: 1.5em; /* Adjust size as needed */
+  color: white;
+  font-size: 3em; 
   text-align: center;
-  padding-bottom: 20px; /* Space below the name */
+  padding-bottom: 40px;
   font-weight: bold;
+  padding: 10px;
 }
 
 .sidebar a {
