@@ -1,30 +1,37 @@
 body {
-    display: flex;
-    margin: 0;
-    font-family: Arial, sans-serif;
-  }
-  
-  .sidebar {
-    height: 100vh;
-    width: 200px;
-    background-color: #333;
-    padding-top: 20px;
-    position: fixed;
-  }
-  
-  .sidebar a {
-    display: block;
-    color: white;
-    padding: 10px;
-    text-decoration: none;
-  }
-  
-  .sidebar a:hover {
-    background-color: #575757;
-  }
-  
-  .content {
-    margin-left: 220px; /* To avoid overlap with sidebar */
-    padding: 20px;
-  }
-  
+  display: flex;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.sidebar {
+  height: 100vh;
+  width: 200px;
+  background-color: #333;
+  padding-top: 20px;
+  position: fixed;
+  color: white; /* Ensure the text color is white */
+}
+
+.sidebar-header {
+  font-size: 1.5em; /* Adjust size as needed */
+  text-align: center;
+  padding-bottom: 20px; /* Space below the name */
+  font-weight: bold;
+}
+
+.sidebar a {
+  display: block;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  background-color: #575757;
+}
+
+.content {
+  margin-left: 220px; /* To avoid overlap with sidebar */
+  padding: 20px;
+}
