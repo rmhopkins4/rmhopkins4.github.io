@@ -61,12 +61,17 @@ body {
   z-index: 1001;
 }
 
-.sidebar-toggle:hover {
-  background-color: #575757;
+/* Hide the button by default on larger screens */
+.sidebar-toggle {
+  display: none;
 }
 
-/* Mobile view */
+/* Only show the button on small screens */
 @media (max-width: 768px) {
+  .sidebar-toggle {
+    display: block; /* Show button on small screens */
+  }
+
   .sidebar {
     width: 100%;
     transform: translateX(-100%); /* Hidden by default */
