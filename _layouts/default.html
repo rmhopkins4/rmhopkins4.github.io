@@ -19,7 +19,12 @@
   </head>
   <body>
     {% include sidebar.html %}
-
     <main>{{ content }}</main>
+
+    <script>
+      function toggleSidebar() {
+        document.querySelector(".sidebar").classList.toggle("show");
+      }
+    </script>
   </body>
 </html>

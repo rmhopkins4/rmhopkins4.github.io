@@ -1,7 +1,12 @@
+/* General body and content layout */
 body {
   display: flex;
   margin: 0;
   font-family: 'Inconsolata', monospace;
+}
+
+.sidebar-container {
+  position: relative;
 }
 
 .sidebar {
@@ -11,11 +16,13 @@ body {
   padding-top: 20px;
   position: fixed;
   color: white;
+  left: 0;
+  top: 0;
+  transition: transform 0.3s ease;
 }
 
 .sidebar-header {
-  color: white;
-  font-size: 2em; 
+  font-size: 2em;
   text-align: center;
   padding-bottom: 40px;
   font-weight: bold;
@@ -33,6 +40,37 @@ body {
 }
 
 .content {
-  margin-left: 220px; /* To avoid overlap with sidebar */
+  margin-left: 220px;
   padding: 20px;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    transform: translateX(-100%); /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+  }
+
+  .sidebar-toggle {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  .sidebar.show {
+    transform: translateX(0); /* Show the sidebar */
+  }
+
+  .content {
+    margin-left: 0;
+    padding: 20px;
+  }
 }
