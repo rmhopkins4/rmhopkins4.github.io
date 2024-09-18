@@ -69,6 +69,20 @@ body {
   display: none;
 }
 
+/* Center the embedded PDF */
+.pdf-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height, adjust as needed */
+}
+
+.pdf-container embed {
+  width: 80%; /* Adjust width, for example 80% of the container */
+  height: 100vh; /* Full viewport height */
+  border: none; /* No border around the PDF */
+}
+
 /* Only show the button on small screens */
 @media (max-width: 768px) {
   .sidebar-toggle {
@@ -90,5 +104,9 @@ body {
     margin-left: 0;
     padding: 20px;
     padding-top: 60px; /* Push content down below the button */
+  }
+
+  .pdf-container embed {
+    height: 500px; /* Full viewport height */
   }
 }
