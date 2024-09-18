@@ -18,6 +18,8 @@
     {% include sidebar.html %}
     <main>{{ content }}</main>
 
+    <p>Last updated {{page.last_modified | date: "%B %-d, %Y" }}</p>
+
     <script>
       function toggleSidebar() {
         document.querySelector(".sidebar").classList.toggle("show");
