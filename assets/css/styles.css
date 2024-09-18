@@ -80,7 +80,6 @@ body {
 .pdf-container embed {
   width: 80%; /* Adjust width, for example 80% of the container */
   height: 100vh; /* Full viewport height */
-  border: none; /* No border around the PDF */
 }
 
 /* Only show the button on small screens */
