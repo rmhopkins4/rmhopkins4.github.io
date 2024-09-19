@@ -16,9 +16,10 @@
   </head>
   <body>
     {% include sidebar.html %}
-    <main>{{ content }}</main>
-
-    <p>Last updated {{page.last_modified | date: "%B %-d, %Y" }}</p>
+    <main>
+      {{ content }}
+      <p>Last updated {{page.last_modified | date: "%B %-d, %Y" }}</p>
+    </main>
 
     <script>
       function toggleSidebar() {
