@@ -18,7 +18,9 @@
     {% include sidebar.html %}
     <main>
       {{ content }}
-      <p>Last updated {{page.last_modified | date: "%B %-d, %Y" }}</p>
+      <div class="content">
+        <p>Last updated {{page.last_modified | date: "%B %-d, %Y" }}</p>
+      </div>
     </main>
 
     <script>
