@@ -110,6 +110,10 @@ body {
   }
 }
 
+.content h4 {
+  margin-top: 2em;
+} 
+
 /* home page highlights */
 
 .highlights a {
@@ -247,6 +251,30 @@ body {
   color: #333;
   line-height: 1.5;
 }
+
+/* work page classwork */
+
+.classwork {
+  margin-top: 2em;
+}
+
+.classwork h2 {
+  font-size: 1.5em;
+  margin-bottom: 0.75em;
+}
+
+.classwork ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.classwork li {
+  padding: 0.25em 0;
+  font-size: 0.95em;
+  color: #333;
+}
+
 
 /* work page archive */
 
