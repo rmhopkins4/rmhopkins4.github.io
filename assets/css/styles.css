@@ -171,6 +171,8 @@ body {
   background: #f5f5f5;
   transition: background 0.2s ease;
   overflow: hidden;
+  scroll-margin-top: 100px;
+
 }
 
 .featured-item:hover {
@@ -297,6 +299,16 @@ body {
   padding: 0.25em 0;
   font-size: 1em;
   color: #333;
+}
+
+.archive li a {
+  text-decoration: none;
+  color: darkblue;
+}
+
+.archive li:has(>a) p {
+  text-decoration: none;
+  color: rgb(48, 48, 135)
 }
 
 .archive li p {
