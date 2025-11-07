@@ -2,7 +2,7 @@
 body {
   display: flex;
   margin: 0;
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Inconsolata', 'Menlo', 'Consolas', 'Courier New', monospace;
 }
 
 
@@ -12,7 +12,7 @@ body {
 
 /* Sidebar styles */
 .sidebar {
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Inconsolata', 'Menlo', 'Consolas', 'Courier New', monospace;
   height: 100vh;
   width: 200px;
   background-color: #333;
@@ -44,7 +44,7 @@ body {
 
 /* Content styles */
 .content {
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Inconsolata', 'Menlo', 'Consolas', 'Courier New', monospace;
   margin-left: 220px; /* avoid overlap with sidebar */
   padding: 20px;
   padding-top: 60px;
@@ -144,7 +144,7 @@ body {
   cursor: pointer;
   padding: 0.75em 1em;
   position: relative;
-  font-family: monospace;
+  font-family: 'Inconsolata', 'Menlo', 'Consolas', 'Courier New', monospace;
   transition: background 0.2s ease;
   font-size: 1.2em;
 }
@@ -186,7 +186,7 @@ body {
   cursor: pointer;
   padding: 0.75em 1em;
   position: relative;
-  font-family: monospace;
+  font-family: 'Inconsolata', 'Menlo', 'Consolas', 'Courier New', monospace;
   transition: background 0.2s ease;
   font-size: 1.2em;
 }
